@@ -1,0 +1,29 @@
+.tabela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+table{
+    border: 1px solid black;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin: 5%;
+}
+
+table img{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+td {
+    margin: 0 auto;
+    justify-content: center;
+    border: 1px solid black;
+}

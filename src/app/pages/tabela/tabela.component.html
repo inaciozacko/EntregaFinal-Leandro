@@ -1,0 +1,32 @@
+
+<div class="tabela">
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Senha</th>
+            <th>E-mail</th>
+            <th>Sexo</th>
+            <th>Cep</th>
+            <th>Estado</th>
+            <th>Cidade</th>
+            <th>Bairro</th>
+            <th>Coisa Favorita</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let pessoa of pessoas">
+        <td>{{pessoa.userName}}</td>
+        <td>{{pessoa.userIdade}}</td>
+        <td>{{pessoa.userSenha}}</td>
+        <td>{{pessoa.userEmail}}</td>
+        <td>{{pessoa.userSexo}}</td>
+        <td>{{pessoa.userCep}}</td>
+        <td>{{pessoa.userEstado}}</td>
+        <td>{{pessoa.userCidade}}</td>
+        <td>{{pessoa.userBairro}}</td>
+        <td><img [src]="pessoa.userImagem" alt=""></td>
+    </tbody>
+</table>
+
+</div>

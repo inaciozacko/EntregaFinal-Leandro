@@ -1,0 +1,160 @@
+<form #f="ngForm" (ngSubmit)="Enviar(f)">
+    <div class="form">
+    <span>
+
+        <h1>Registro</h1>
+        
+        <div class="nomeUsuario">
+                <label for="nome" class="control-label">
+                  Nome:
+                </label>
+
+            <div class="nomeCampo">
+                <input type="text" name="nome" id="" class="nome" #name="ngModel" [(ngModel)]="nomeTXT"
+                placeholder="Nome" 
+                ngModel 
+                required>
+                <div class="erro" *ngIf="!name.valid && name.touched">
+                    Campo Obrigatório
+                </div>
+            </div>
+        </div>
+
+        <div class="idade">
+            <label for="nome" class="control-label">
+                Idade:
+            </label>
+            <input type="number" name="idade" id="idade" #idade="ngModel" [(ngModel)]="idadeTXT"
+            placeholder="Idade"
+            ngModel
+            required>
+            <div class="erro" *ngIf="!idade.valid && idade.touched">
+                Campo Obrigatório
+            </div>
+        </div>
+
+            <div class="email">
+                <label for="nome" class="control-label">
+                    E-mail:
+                </label>
+                <input type="email" name="email" class="email" placeholder="E-Mail" #email="ngModel" [(ngModel)]="emailTXT"
+                ngModel
+                required email>
+                <div class="erro" *ngIf="!email.valid && email.touched">
+                    Campo Obrigatório
+                </div>
+            </div>
+
+            <div class="CampoSenha">
+                <div class="senha">
+                    <label for="nome" class="control-label">
+                        Senha:
+                    </label>
+                    <input type="password" name="senha" class="senha" placeholder="senha" #senha="ngModel" [(ngModel)]="senhaTXT"
+                ngModel
+                required passoword>
+                <div class="erro" *ngIf="!senha.valid && senha.touched">
+                    Campo Obrigatório
+                </div>
+
+            </div>
+
+            <div class="ConfirmarSenha">
+                    <label for="nome" class="control-label">
+                        Confirmar Senha:
+                    </label>
+                    <input type="password" name="confirmarSenha" class="confirmarSenha" placeholder="confirmarSenha" [(ngModel)]="confirmarSenhaTXT"
+                #confirmarSenha="ngModel"
+                ngModel
+                required passoword>
+                <div class="erro" *ngIf="!confirmarSenha.valid && confirmarSenha.touched && confirmarSenhaTXT != senhaTXT">
+                    Campo Obrigatório
+                </div>
+            </div>
+            </div>
+
+            <div class="imagem">
+                <label for="nome" class="control-label">
+                    Url de uma imagem:
+                </label>
+                <input type="text" name="imagem" class="imagem" placeholder="imagem" #imagem="ngModel" [(ngModel)]="imagemTXT"
+                ngModel
+                required>
+                <div class="erro" *ngIf="!imagem.valid && imagem.touched">
+                    Campo Obrigatório
+                </div>
+            </div>
+
+            <div class="sexo">
+                <label for="nome" class="control-label">
+                    Sexo:
+                </label>
+            <div class="Feminino">
+                <input type="radio" name="sexo" class="sexoF" value="Feminino" #sexoFeminino="ngModel" [(ngModel)]="SexoF"
+                ngModel
+                required>F
+            </div>
+
+            <div class="Masculino">
+                <input type="radio" name="sexo" class="sexoM" value="Masculino" #sexoMasculino="ngModel" [(ngModel)]="SexoM"
+                ngModel
+                required>M
+            </div>
+        </div>
+
+        <div ngModelGroup="endereco">
+
+        <div class="cep">
+            <label for="nome" class="control-label">
+                CEP:    
+            </label>
+            <input type="text" name="cep" class="cep" #cep="ngModel" [(ngModel)]="cepTXT"
+            ngModel
+            required
+            (blur)="consultaCEP($event.target.value, f)">
+            <div class="erro" *ngIf="!cep.valid && cep.touched">
+                Campo Obrigatório
+            </div>
+        </div>
+
+        <div class="Localizacao">
+        <div class="estado">
+            <label for="nome" class="control-label">
+                Estado:
+            </label>
+            <input type="text" name="estado" class="estado" ngModel [(ngModel)]="estadoTXT"
+            #estado="ngModel">
+        </div>
+
+        <div class="cidade">
+            <label for="nome" class="control-label">
+                Cidade: 
+            </label>
+            <input type="text" name="cidade" class="cidade" ngModel [(ngModel)]="cidadeTXT"
+            #cidade="ngModel">
+        </div>
+
+        <div class="bairro">
+            <label for="nome" class="control-label">
+                Bairro: 
+            </label>
+            <input type="text" name="bairro" class="bairro" ngModel  [(ngModel)]="bairroTXT"
+            #bairro="ngModel">
+        </div>
+    </div>
+    </div>
+
+    <button type="submit" 
+    [disabled]="!f.valid">Confirmar
+    </button>
+    
+</span>
+
+<div class="mostartimg">
+    <h2>Imagem</h2>
+    <img src="{{imagemTXT}}" alt="">
+</div>
+
+</div>
+</form>
+

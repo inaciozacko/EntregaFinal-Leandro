@@ -1,0 +1,13 @@
+.youtube:hover{
+    color: #c4302b;
+}
+.insta:hover{
+    background-image: url('https://img.freepik.com/free-vector/instagram-background-gradient-colors_23-2147821883.jpg?w=2000');
+    background-size: 21px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.twitter:hover{
+    color: #00acee;
+}

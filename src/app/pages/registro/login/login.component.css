@@ -1,0 +1,175 @@
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    color: #053D6B;
+  }
+
+  .nomeCampo input{
+    width: 50vh;
+    height: 30px;
+    outline: none;
+  }
+
+  .nomeCampo .erro{
+    display: flex;
+    flex-direction: column;
+    color: rgb(206, 0, 0);
+    align-items: center;
+  }
+
+.email{
+  display: flex;
+  flex-direction: column;
+}
+
+  .email input{
+    width: 50vh;
+    height: 30px;
+    outline: none;
+  }
+  
+  .form input:focus{
+    border: 1px solid black;
+  }
+
+  .erro{
+    display: flex;
+    flex-direction: column;
+    color: rgb(206, 0, 0);
+    align-items: center;
+  }
+
+  .campoSenha .erro{
+    display: flex;
+    flex-direction: column;
+    color: rgb(206, 0, 0);
+    align-items: center;
+
+  }
+  
+  span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+    width: 500px;
+    background-color: #6DB2EB;
+    align-items: center;
+    border: 2px solid black;
+  }
+
+  .ng-invalid.ng-touched:not(form) {
+    border: 2px solid rgb(231, 2, 2);;
+  }
+
+  .sexo{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 67%;
+  }
+
+.idade{
+  display: flex;
+  flex-direction: column;
+}
+
+  .idade input{
+      width: 50vh;
+      height: 30px;
+      outline: none;
+  }
+
+.CampoSenha{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+  .senha{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ConfirmarSenha{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .CampoSenha input{
+    width: 50vh;
+    height: 30px;
+    outline: none;
+  }
+
+  .cep{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cep input{
+    width: 50vh;
+    height: 30px;
+    outline: none;
+  }
+
+  .estado{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cidade{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bairro{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Localizacao input{
+    width: 50vh;
+    height: 30px;
+    outline: none;
+  }
+
+  span button{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .imagem{
+    width: 50vh;
+    height: 30px;
+    outline: none;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .mostartimg{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: #6DB2EB;
+    border: 2px solid black;
+  }
+
+  .mostartimg img{
+    display: flex;
+    max-width: 300px;
+    max-height: 300px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
